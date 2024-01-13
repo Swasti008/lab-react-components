@@ -2,13 +2,12 @@ import "./App.css";
 import GallaryFooter from "./components/GallaryFooter";
 import Body from "./components/body";
 import Header from "./components/header";
-import Data from "./components/Data";
 
-function App() {
+function App(props) {
   return (
     <div>
       <Header />
-      <Body data={Data} />
+      <Body imgData={props.data} />
       {/* adding footer component */}
       <GallaryFooter />
     </div>
