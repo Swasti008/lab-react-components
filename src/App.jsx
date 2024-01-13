@@ -1,32 +1,14 @@
 import "./App.css";
-import lake from "./image/lake.JPG";
 import GallaryFooter from "./components/GallaryFooter";
 import Body from "./components/body";
 import Header from "./components/header";
-const imageData = [
-  {
-    id: 1,
-    img: lake,
-  },
-  {
-    id: 2,
-    img: lake,
-  },
-  {
-    id: 3,
-    img: lake,
-  },
-  {
-    id: 4,
-    img: lake,
-  },
-];
+import Data from "./components/Data";
 
 function App() {
   return (
     <div>
       <Header />
-      <Body data={imageData} />
+      <Body data={Data} />
       {/* adding footer component */}
       <GallaryFooter />
     </div>
